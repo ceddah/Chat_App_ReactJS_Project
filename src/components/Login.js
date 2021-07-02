@@ -1,10 +1,15 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { GoogleOutlined, FacebookOutlined} from '@ant-design/icons';
 import firebase from "firebase/app"
 
 import { auth } from "../firebase"
 
 const Login = () => {
+
+    useEffect(() => {
+        document.title = "Login | Chat App";
+    }, []);
+    
     return (
         <div id="login-page">
             <div id="login-card">
