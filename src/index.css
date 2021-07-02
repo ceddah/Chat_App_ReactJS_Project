@@ -6,6 +6,13 @@
     Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
+.App {
+  display:grid;
+  place-items: center;
+  height: 98vh;
+  overflow: hidden;
+}
+
 /* Chats Page */
 
 .chats-page {

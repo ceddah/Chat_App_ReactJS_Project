@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios'
+import { Default } from 'react-spinners-css';
+
 import { useHistory } from 'react-router';
 import { ChatEngine } from 'react-chat-engine';
 import { auth } from '../firebase';
@@ -63,7 +65,7 @@ const Chats = () => {
     }, [user, history])
 
     if(!user || loading) {
-        return <div />
+        return <Default color="#1890FF" />
     }
 
     return (
